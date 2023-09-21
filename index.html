@@ -2,13 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="unpkg.com/:package@:version/:file">
     <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
     <link rel="icon" href="369718584_1332223134064533_5991660775320654158_n.jpg" type="image/x-icon">
-    <title>Chào mừng bạn đến với chúng tôi</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Nguyễn Minh Quốc xin chào</title>
 </head>
 <body>
+    <div id="dong_ho">
+        <h2>Thời gian bây giờ là:</h2>
+        <div id="thoi_gian">
+            <div>
+                <span id="gio">00</span><span>Giờ</span>
+            </div>
+            <div>
+                  <span id="phut">00</span><span>Phút</span>
+            </div>
+            <div>
+                <span id="giay">00</span><span>Giây</span>
+            </div>
+        </div>
+    </div>
 <navbar>
     <div class="logo">
         <img src="369718584_1332223134064533_5991660775320654158_n.jpg" alt="">
@@ -17,10 +34,10 @@
         <form action="">
             <nav class="container">
                 <div class="home">
-                    <a href="#">About</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Experience</a>
-                    <a href="#">Contact</a>
+                    <a href="https://codelearn.io/sharing/kien-thuc-co-ban-khi-bat-dau-hoc-cpp">About</a>
+                    <a href="https://topdev.vn/blog/html5/">Projects</a>
+                    <a href="https://wiki.matbao.net/css3-la-gi-tu-a-den-z-cac-tinh-nang-moi-cua-css3-so-voi-css/">Experience</a>
+                    <a href="https://aws.amazon.com/vi/what-is/javascript/">Contact</a>
                 </div>
             </nav>
 
@@ -47,7 +64,7 @@
             </div>
             <div class="box7">
                 <a href="https://www.facebook.com/profile.php?id=100018305766101&locale=vi_VN" class="a1"> <i class="fa-brands fa-facebook"></i> Facebook </a>
-                <a href="https://www.youtube.com/channel/UCCL0K_k1TRf_K8nMPvwj0Lw" class="a2"> <i class="fa-brands fa-twitter"></i> Twitter </a>
+                <a href="https://www.youtube.com/channel/UCCL0K_k1TRf_K8nMPvwj0Lw" class="a2"> <i class="fa-brands fa-youtube"></i> Youtube </a>
                 <a href="https://www.tiktok.com/@namdong2205" class="a3"> <i class="fa-brands fa-tiktok"></i> TikTok </a>
                 <a href="https://www.instagram.com/quoc_lady/" class="a2"> <i class="fa-brands fa-instagram"></i> Instagram </a>
                 <a href="https://github.com/lady2k5" class="a1"> <i class="fa-brands fa-gitbub"></i> Github </a>
@@ -59,5 +76,22 @@
         
     </div>
 </navbar>
+<script>
+    function Dong_ho() {
+        var gio = document.getElementById("gio");
+        var phut = document.getElementById("phut");
+        var giay = document.getElementById("giay");
+    
+        var Gio_hien_tai = new Date().getHours();
+        var Phut_hien_tai = new Date().getMinutes();
+        var Giay_hien_tai = new Date().getSeconds();
+    
+        gio.innerHTML = Gio_hien_tai;
+        phut.innerHTML = Phut_hien_tai;
+        giay.innerHTML = Giay_hien_tai;
+    }
+    
+    var Dem_gio = setInterval(Dong_ho, 1000);
+</script>
 </body>
 </html>
