@@ -297,7 +297,7 @@ body{
     display:block;
     width:200px;
     height: 160px;
-    background: #2196f3;
+    background: hsl(204, 95%, 48%);
     color: #fff;
     font-weight: 300;
     display:flex;
@@ -318,7 +318,7 @@ body{
     letter-spacing: 0.3rem;
     z-index: 2;
     box-shadow: none;
-    background:#127fd6;
+    background:#0478ec;
     text-transform: uppercase;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
@@ -336,5 +336,3 @@ body{
     margin: 0 5px;
     -webkit-box-reflect: below 10px linear-gradient(transparent, #0004);
 }
-
-
